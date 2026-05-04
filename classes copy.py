@@ -1,4 +1,4 @@
-import os 
+import os
 os.system("cls")
 
 from dataclasses import dataclass
@@ -25,7 +25,7 @@ class Funcionario:
 
 lista_de_funcionarios_novos = []
 
-for i in range(3):
+while True:
 
     print("")
     print("")
@@ -34,12 +34,17 @@ for i in range(3):
         nome = input("Digite seu nome = ").strip().lower(),
         email = input("Digite seu email = ").strip().lower(),
         telefone = input("Digite seu telefone = ").strip()
-
     )
 
     print("")
 
     lista_de_funcionarios_novos.append(novo_funcionario)
+
+    opcao = input("Deseja cadastrar mais funcionarios? S|N = ").strip().lower()
+
+    if opcao == "n":
+        break
+
 
 ## Para cada funcionario na lista faça alguma coisa
 for funcionario in lista_de_funcionarios_novos:
