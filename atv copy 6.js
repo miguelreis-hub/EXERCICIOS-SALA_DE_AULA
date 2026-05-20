@@ -1,40 +1,20 @@
+let pares = 0
+let impares = 0
 
-const vetor_nomes = ['miguel','joão','Bruno',"Luis"]
 
-console.log("Exibindo mensagem.......")
+vetor_numeros = [4,12,23,31,47,58]
+
+
+for (let i = 0;  i<vetor_numeros.length; i++){
+
+    if(vetor_numeros[i] % 2 == 0)
+        pares +=1
+    else
+        impares+=1
+    
+}
+
+
+console.log(`A quantidade de numeros de pares é  = ${pares}`)
 console.log("")
-
-
-vetor_nomes.push("Juninho viadinho")
-
-console.log(vetor_nomes)
-
-console.log("")
-
-
-vetor_nomes.unshift("Miguelzão")
-
-console.log("")
-
-console.log(vetor_nomes)
-console.log("")
-
-console.log("Removendo dados ......")
-
-console.log("")
-
-vetor_nomes.shift()
-
-console.log(vetor_nomes)
-
-console.log("")
-
-console.log("Removendo ultimo indice do vetor..........")
-console.log("")
-
-vetor_nomes.pop()
-
-console.log(vetor_nomes)
-
-
-
+console.log(`A quantidade de numeros impares é = ${impares}`)
